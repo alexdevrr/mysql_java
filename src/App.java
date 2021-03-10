@@ -1,9 +1,12 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+
+// import java.sql.Connection;
+// import java.sql.DriverManager;
+// import java.sql.SQLException;
+// import java.sql.Statement;
+// import java.sql.ResultSet;
+import java.sql.*;
+
 import java.util.Scanner;
-import java.sql.Statement;
-import java.sql.ResultSet;
 
 public class App {
     static Connection conn = null;
@@ -13,6 +16,7 @@ public class App {
         Scanner teclado = new Scanner(System.in);
         Statement stmt = null;
         String enter;
+        String query = "insert into alumnos values('777', 'Juan', 70, now())";
 
         try {
 
